@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FRAGMENT.ThucDonFragment">
+
+    <Spinner
+        android:id="@+id/sp_thucdon"
+        android:background="@drawable/custom_radius"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_thucdon">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_thucdon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <com.sa90.materialarcmenu.ArcMenu
+            android:id="@+id/arc_thucdon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menu_scr="@drawable/iconadd"
+            app:menu_open="arc_left"
+            android:layout_gravity="bottom|right"
+            app:layout_anchorGravity="bottom|right|end">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_thucdon_themmon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menutd"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_thucdon_xoaloaimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:src="@drawable/iconloaitd"
+                app:backgroundTint="@color/red" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_thucdon_themloaimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconloaitd"/>
+
+        </com.sa90.materialarcmenu.ArcMenu>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

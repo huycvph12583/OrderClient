@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_corner_16"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Tìm Kiếm Theo Ngày"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bg_white_corner_16_topleft_topright"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_hd_tk_tungay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Từ ngày: yyyy/MM/dd"
+            android:background="@drawable/bg_white_corner_10_border_gray"/>
+
+        <TextView
+            android:id="@+id/tv_hd_tk_denngay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Đến ngày: yyyy/MM/dd"
+            android:background="@drawable/bg_white_corner_10_border_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_hd_tk_huy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_corner_10"
+                android:text="Hủy"
+                android:alpha="0.4"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:backgroundTint="@color/nen" />
+
+            <Button
+                android:id="@+id/btn_hd_tk_dongy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:background="@drawable/bg_blue_corner_10"
+                android:text="ĐỒNG Ý"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

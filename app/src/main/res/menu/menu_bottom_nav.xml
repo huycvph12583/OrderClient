@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_hoadon"
+        android:title="@string/action_hoadon"
+        android:icon="@drawable/menuhd"/>
+
+    <item android:id="@+id/action_thucdon"
+        android:title="@string/action_thucdon"
+        android:icon="@drawable/menutd"/>
+
+    <item android:id="@+id/action_thongke"
+        android:title="@string/action_thongke"
+        android:icon="@drawable/menutk"/>
+
+    <item android:id="@+id/action_quanly"
+        android:title="@string/action_quanly"
+        android:icon="@drawable/menuql"/>
+</menu>
